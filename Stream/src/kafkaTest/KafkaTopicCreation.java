@@ -32,7 +32,7 @@ public class KafkaTopicCreation {
         Properties topicConfiguration = new Properties();
         
       // AdminUtils.createTopic(zkUtils, topicName, noOfPartitions, noOfReplication, topicConfiguration);
-        AdminUtils.createTopic(zkUtils, topicName, noOfPartitions, noOfReplication, topicConfiguration, null);
+        AdminUtils.createTopic(zkUtils, topicName, noOfPartitions, noOfReplication, topicConfiguration);
         zkClient.close();
 	}
 
